@@ -68,9 +68,8 @@ exports.newTransfers = async (req, res) => {
     });
 
     return res.status(200).json({
-      status: 'success',
-      message: 'The transfer was successful',
-      message: `Your new balance is ${newAmountUserSender}`,
+      status: 'success',      
+      message: `The transfer was successful, Your new balance is ${newAmountUserSender}`,
     });
   } catch (error) {
     console.log(error);
